@@ -1,0 +1,19 @@
+head
+	title SENA Bank 
+body
+	header
+		h1 Lista de clientes
+	main
+		table
+			thead
+				td Nombre
+				td Ubicacion
+				td Empresa
+			each u in customers
+				tr
+					td #{u.customer_firstname} #{u.customer_lastname}
+					td #{u.customer_country} - #{u.customer_city}
+					td #{u.customer_company}
+					td: a(href=`/user/update/${u.customer_id}`) Actualizar
+					td: a(href=`/user/delete/${u.customer_id}`) Borrar
+

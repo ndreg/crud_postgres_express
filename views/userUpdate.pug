@@ -1,0 +1,14 @@
+head
+	title Info
+body
+	header
+		h1 Actualizar usuario
+	main
+		form(action=`/user/update/${user.customer_id}` method="POST")
+			input(type="text" value=`${user.customer_firstname}` placeholder="Ingresa el nombre" name="firstname")
+			input(type="text" value=`${user.customer_lastname}` placeholder="Ingresa el apellido" name="lastname")
+			input(type="text" value=`${user.customer_country}` placeholder="Ingresa el pais" name="country")
+			input(type="text" value=`${user.customer_city}` placeholder="Ingresa la ciudad" name="city")
+			input(type="text" value=`${user.customer_company}` placeholder="Ingresa la empresa" name="company")
+			input(type="submit" value="Actualizar")
+			

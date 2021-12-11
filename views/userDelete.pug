@@ -1,0 +1,13 @@
+head
+	title Info
+body
+	header
+		h1 Eliminar usuario 
+	main
+		h1 Informacion del usuario a borrar
+		p Nombre: #{user.customer_firstname} #{user.customer_lastname}
+		p Ubicacion: #{user.customer_country} - #{user.customer_city}
+		form(action=`/user/delete/${user.customer_id}` method="POST")
+			h1 Desea borrar al usuario?
+			a(href="/user/all") Cancelar
+			input(type="submit" value="Borrar")

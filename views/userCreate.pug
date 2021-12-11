@@ -1,0 +1,14 @@
+head
+	title Info
+body
+	header
+		h1 Actualizar usuario
+	main
+		form(action=`/user/create` method="POST")
+			input(type="text" placeholder="Ingresa el nombre" name="customer_firstname")
+			input(type="text" placeholder="Ingresa el apellido" name="customer_lastname")
+			input(type="text" placeholder="Ingresa el pais" name="customer_country")
+			input(type="text" placeholder="Ingresa la ciudad" name="customer_city")
+			input(type="text" placeholder="Ingresa la empresa" name="customer_company")
+			input(type="submit" value="crear")
+			
